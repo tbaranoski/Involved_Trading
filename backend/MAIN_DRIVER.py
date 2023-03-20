@@ -1,8 +1,10 @@
 from alpaca.trading.client import TradingClient
 import logging
+from alpaca.data.historical import StockHistoricalDataClient
+import alpaca
+import get_historical_data
 
-
-
+#Configuration Files
 import config
 
 
@@ -14,8 +16,7 @@ logging.basicConfig(level=logging.WARNING)
 ##########################################################################################################
 ##########################################################################################################
 ##########################################################################################################
-def Configure_Client():
-    
+def Configure_Client(): 
     try:
         trading_client = TradingClient(config.API_KEY, config.SECRET_KEY)
         return trading_client
@@ -23,8 +24,14 @@ def Configure_Client():
         logging.error("CLIENT FAILED TO CONFIGURE")
 
 
+#Test for pulling bar data from client
+def Get_Stock_Data(client):
+    historical_data_client = StockHistoricalDataClient(client)
+    historical_data_client.get_stock_bars()
+
 def main():
-    alpaca_obj = Configure_Client()
+    api = Configure_Client()
+    get_historical_data.Get_D_Bars(api)
 
 ##########################################################################################################
 ##########################################################################################################
