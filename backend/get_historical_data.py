@@ -46,6 +46,7 @@ def Get_D_Bars(api = None, symbol_or_symbols = None, start= None, end=None, limi
     request = StockBarsRequest(symbol_or_symbols=symbol_or_symbols, timeframe=TimeFrame.Day, start=start, end=end, limit=limit)
     barset_D_temp = api.get_stock_bars(request_params=request)
 
+    print(barset_D_temp)
     #Convert to Pandas Dataframe    
     #pandas_dataframe_temp = pd.DataFrame(barset_D_temp.data[symbol_or_symbols])    
     #print(pandas_dataframe_temp)
@@ -53,7 +54,7 @@ def Get_D_Bars(api = None, symbol_or_symbols = None, start= None, end=None, limi
 
     #column_headers = list(pandas_dataframe_temp.columns.values)
     #print("The Column Header :", column_headers)
-    print(barset_D_temp.)
+    #print(barset_D_temp.)
 
 #Test Driver to get Data
 def test_driver():
