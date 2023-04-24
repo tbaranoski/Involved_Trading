@@ -2,7 +2,7 @@ from alpaca.trading.client import TradingClient
 import logging
 import alpaca
 from alpaca.data.historical import StockHistoricalDataClient
-
+import clib
 
 #Configuration Files
 import config
