@@ -17,15 +17,6 @@ from alpaca.data.requests import (
 from alpaca.data.timeframe import TimeFrame
 from alpaca.data.enums import Exchange, DataFeed
 from alpaca.data.models import BarSet, QuoteSet, TradeSet
-import config_client
-
-
-#start= ""
-#timeframe = T
-#limit = 
-#symbol = "AAPL"
-
-
 
 """
     Retrieves daily bars for a specified symbol and time period from Alpaca's API.
@@ -40,27 +31,13 @@ import config_client
     Returns:
         dict: A dictionary containing the retrieved bars, organized by symbol.
     """
+
+#Returns Dataframe of Data for ticker
 def Get_D_Bars(api = None, symbol_or_symbols = None, start= None, end=None, limit=None):
 
     #Configure request object and make API request
     request = StockBarsRequest(symbol_or_symbols=symbol_or_symbols, timeframe=TimeFrame.Day, start=start, end=end, limit=limit)
-    barset_D_temp = api.get_stock_bars(request_params=request)
+    barset_D_temp = api.get_stock_bars(request_params=request).df
 
     print(barset_D_temp)
-    #Convert to Pandas Dataframe    
-    #pandas_dataframe_temp = pd.DataFrame(barset_D_temp.data[symbol_or_symbols])    
-    #print(pandas_dataframe_temp)
-    #print(pandas_dataframe_temp.to_markdown())
-
-    #column_headers = list(pandas_dataframe_temp.columns.values)
-    #print("The Column Header :", column_headers)
-    #print(barset_D_temp.)
-
-#Test Driver to get Data
-def test_driver():
-    
-    Get_D_Bars(api=config_client.Configure_Historical_Data_Client(), symbol_or_symbols="AAPL", start = datetime(2022, 2, 1), limit = 20)
-
-
-
-test_driver()
+  
