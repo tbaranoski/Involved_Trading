@@ -19,4 +19,3 @@ def Coleman_Driver():
     bars_D = Get_D_Bars(historical_data_client, symbol_or_symbols="AAPL")
 
 
-Coleman_Driver()
