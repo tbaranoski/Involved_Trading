@@ -41,3 +41,4 @@ def Get_D_Bars(api = None, symbol_or_symbols = None, start= None, end=None, limi
 
     print(barset_D_temp)
   
+# test
