@@ -17,5 +17,7 @@ def Coleman_Driver():
 
     #Test getting data
     bars_D = Get_D_Bars(historical_data_client, symbol_or_symbols="AAPL")
+    print(bars_D.head())
 
 
+Coleman_Driver()

@@ -37,8 +37,8 @@ def Get_D_Bars(api = None, symbol_or_symbols = None, start= None, end=None, limi
 
     #Configure request object and make API request
     request = StockBarsRequest(symbol_or_symbols=symbol_or_symbols, timeframe=TimeFrame.Day, start=start, end=end, limit=limit)
-    barset_D_temp = api.get_stock_bars(request_params=request).df
+    barset_D_temp = api.get_stock_bars(request_params=request)
 
-    print(barset_D_temp)
+    return barset_D_temp
   
-# test
+Get_D_Bars(['SPY'])
