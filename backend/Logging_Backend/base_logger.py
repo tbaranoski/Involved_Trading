@@ -27,4 +27,4 @@ file_name = dt_string_now + '.log'
 
 #Initialize global logger for backend with file for every run
 logger = logging
-logger.basicConfig(level = LOG_LEVEL,filename=LOG_FOLDER_PATH+file_name, format='%(asctime)s %(levelname)s    %(message)s   %(pathname)s',filemode='w')
+logger.basicConfig(level = LOG_LEVEL,filename=LOG_FOLDER_PATH+file_name, format='%(asctime)s %(levelname)s    %(message)s         %(pathname)s',filemode='w')

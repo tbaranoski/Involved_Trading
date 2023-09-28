@@ -1,0 +1,8 @@
+2023-07-01 03:42:39,492 DEBUG    Quant started, Taylor_Driver() started!         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\taylor_driver.py
+2023-07-01 03:42:39,492 INFO    Clients configured correctly         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\taylor_driver.py
+2023-07-01 03:42:39,493 INFO    Start Date: 2023-01-01         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\Taylor_package\test_m.py
+2023-07-01 03:42:39,493 INFO    End Date: 2023-05-31         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\Taylor_package\test_m.py
+2023-07-01 03:42:39,497 DEBUG    Starting new HTTPS connection (1): data.alpaca.markets:443         C:\Python39\lib\site-packages\urllib3\connectionpool.py
+2023-07-01 03:42:39,799 DEBUG    https://data.alpaca.markets:443 "GET /v2/stocks/bars?symbols=AAPL&timeframe=1Month&start=2023-01-01&end=2023-05-31&limit=None&adjustment=raw HTTP/1.1" 422 67         C:\Python39\lib\site-packages\urllib3\connectionpool.py
+2023-07-01 03:42:39,800 DEBUG    {"code":42210000,"message":"invalid limit, None is not an integer"}         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\Taylor_package\test_m.py
+2023-07-01 03:42:39,801 ERROR    Error getting Bars from Alpaca Endpoint'bars'         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\Taylor_package\test_m.py

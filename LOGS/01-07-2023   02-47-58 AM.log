@@ -1,0 +1,12 @@
+2023-07-01 02:47:58,944 DEBUG    Quant started, Taylor_Driver() started!         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\taylor_driver.py
+2023-07-01 02:47:58,944 INFO    Clients configured correctly         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\taylor_driver.py
+2023-07-01 02:47:58,946 DEBUG    Starting new HTTPS connection (1): data.alpaca.markets:443         C:\Python39\lib\site-packages\urllib3\connectionpool.py
+2023-07-01 02:47:59,263 DEBUG    https://data.alpaca.markets:443 "GET /v2/stocks/bars?symbols=AAPL&timeframe=1Day&start=2023-01-04&end=2023-09-03&limit=100&adjustment=raw HTTP/1.1" 422 102         C:\Python39\lib\site-packages\urllib3\connectionpool.py
+2023-07-01 02:47:59,265 DEBUG    {"code":42210000,"message":"your subscription does not permit querying data from the past 15 minutes"}         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\Taylor_package\test_m.py
+2023-07-01 02:47:59,265 ERROR    Error getting Bars from Alpaca Endpoint'bars'         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\Taylor_package\test_m.py
+2023-07-01 02:47:59,265 DEBUG    Quant started, Taylor_Driver() started!         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\taylor_driver.py
+2023-07-01 02:47:59,266 INFO    Clients configured correctly         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\taylor_driver.py
+2023-07-01 02:47:59,267 DEBUG    Starting new HTTPS connection (1): data.alpaca.markets:443         C:\Python39\lib\site-packages\urllib3\connectionpool.py
+2023-07-01 02:47:59,544 DEBUG    https://data.alpaca.markets:443 "GET /v2/stocks/bars?symbols=AAPL&timeframe=1Day&start=2023-01-04&end=2023-09-03&limit=100&adjustment=raw HTTP/1.1" 422 102         C:\Python39\lib\site-packages\urllib3\connectionpool.py
+2023-07-01 02:47:59,545 DEBUG    {"code":42210000,"message":"your subscription does not permit querying data from the past 15 minutes"}         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\Taylor_package\test_m.py
+2023-07-01 02:47:59,545 ERROR    Error getting Bars from Alpaca Endpoint'bars'         c:\Users\Taylor\Desktop\Involved Investments\Quant\Involved_Trading\backend\Taylor_package\test_m.py
